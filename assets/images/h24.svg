@@ -1,0 +1,15 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_0_325" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+<rect width="24" height="24" fill="white"/>
+</mask>
+<g mask="url(#mask0_0_325)">
+<rect x="4.75" y="4.75" width="5.5" height="5.5" rx="1.25" stroke="black" stroke-width="1.5"/>
+<rect x="4.75" y="13.75" width="5.5" height="5.5" rx="1.25" stroke="black" stroke-width="1.5"/>
+<rect x="13.75" y="4.75" width="5.5" height="5.5" rx="1.25" stroke="black" stroke-width="1.5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14 13H13V14V14.5V15.5H14H14.5H15.25V16V17V17.5H14.5H14H13V18.5V19V20H14H14.5H15.5V19V18.5V17.5H16.25H16.75H17.5V18.5V19V20H18.5H19H20V19V18.5V17.5H19H18.5H17.75V17V16V15.5H18.5H19H20V14.5V14V13H19H18.5H17.5V14V14.5V15.5H16.75H16.25H15.5V14.5V14V13H14.5H14Z" fill="black"/>
+<path d="M7 2H3C2.44772 2 2 2.44772 2 3V7" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M7 22H3C2.44772 22 2 21.5523 2 21V17" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M17 2H21C21.5523 2 22 2.44772 22 3V7" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M17 22H21C21.5523 22 22 21.5523 22 21V17" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+</g>
+</svg>
