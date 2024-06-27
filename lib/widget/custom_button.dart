@@ -35,7 +35,7 @@ class CustomButton extends StatelessWidget {
         child: Center(
           child: Text(
             text,
-            style: Theme.of(context).textTheme.bodyText2!.copyWith(
+            style: Theme.of(context).textTheme.bodySmall!.copyWith(
                   fontWeight: FontWeight.w700,
                   fontSize: 16,
                   color: textColor ?? Colors.white,
@@ -78,7 +78,7 @@ class SmallButton extends StatelessWidget {
         child: Center(
           child: Text(
             text,
-            style: Theme.of(context).textTheme.bodyText2!.copyWith(
+            style: Theme.of(context).textTheme.bodySmall!.copyWith(
                   fontWeight: FontWeight.w700,
                   fontSize: 12,
                   color: textColor ?? Colors.white,

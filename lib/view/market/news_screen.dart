@@ -26,7 +26,7 @@ class _NewsScreenState extends State<NewsScreen> {
                 const BackIcon(),
                 Text(
                   "Bitcoin News",
-                  style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                         fontSize: 16,
                         fontWeight: FontWeight.w800,
                       ),
@@ -76,7 +76,7 @@ class _NewsScreenState extends State<NewsScreen> {
                                                 : "Market Wrap: Bitcoin Stuck Below \$40K, Altcoins See Less Selling…",
                                 style: Theme.of(context)
                                     .textTheme
-                                    .bodyText1!
+                                    .bodyMedium!
                                     .copyWith(
                                       fontSize: 12,
                                       fontWeight: FontWeight.w400,
@@ -98,7 +98,7 @@ class _NewsScreenState extends State<NewsScreen> {
                                                 : "CoinDesk • 2h",
                                 style: Theme.of(context)
                                     .textTheme
-                                    .bodyText1!
+                                    .bodyMedium!
                                     .copyWith(
                                       fontSize: 10,
                                       fontWeight: FontWeight.w500,

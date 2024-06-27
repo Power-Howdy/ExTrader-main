@@ -31,7 +31,7 @@ class _SecurityScreenState extends State<SecurityScreen> {
                 const BackIcon(),
                 Text(
                   "Security",
-                  style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                         fontSize: 16,
                         fontWeight: FontWeight.w800,
                       ),
@@ -65,7 +65,7 @@ class _SecurityScreenState extends State<SecurityScreen> {
                                           : "Change Password",
                               style: Theme.of(context)
                                   .textTheme
-                                  .bodyText1!
+                                  .bodyMedium!
                                   .copyWith(
                                     fontSize: 14,
                                     fontWeight: FontWeight.w800,
@@ -91,7 +91,7 @@ class _SecurityScreenState extends State<SecurityScreen> {
                                     color: Theme.of(context)
                                         .textTheme
                                         // ignore: deprecated_member_use
-                                        .bodyText1!
+                                        .bodyMedium!
                                         .color,
                                     size: 12,
                                   ),

@@ -27,7 +27,7 @@ class _RewardScreenState extends State<RewardScreen> {
                 const BackIcon(),
                 Text(
                   "Rewards",
-                  style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                         fontSize: 16,
                         fontWeight: FontWeight.w800,
                       ),
@@ -76,7 +76,7 @@ class _RewardScreenState extends State<RewardScreen> {
                                     "Redeem promo code",
                                     style: Theme.of(context)
                                         .textTheme
-                                        .bodyText1!
+                                        .bodyMedium!
                                         .copyWith(
                                           fontSize: 18,
                                           fontWeight: FontWeight.w800,
@@ -89,7 +89,7 @@ class _RewardScreenState extends State<RewardScreen> {
                                 "Enter a promo code to claim your reward",
                                 style: Theme.of(context)
                                     .textTheme
-                                    .bodyText1!
+                                    .bodyMedium!
                                     .copyWith(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w500,
@@ -118,7 +118,7 @@ class _RewardScreenState extends State<RewardScreen> {
                                       "Enter Code",
                                       style: Theme.of(context)
                                           .textTheme
-                                          .bodyText2!
+                                          .bodySmall!
                                           .copyWith(
                                             fontWeight: FontWeight.w500,
                                             fontSize: 14,
@@ -166,7 +166,7 @@ class _RewardScreenState extends State<RewardScreen> {
                                 "Collect points for free\ncrypto",
                                 style: Theme.of(context)
                                     .textTheme
-                                    .bodyText1!
+                                    .bodyMedium!
                                     .copyWith(
                                       fontSize: 22,
                                       fontWeight: FontWeight.w800,
@@ -178,7 +178,7 @@ class _RewardScreenState extends State<RewardScreen> {
                                 "Points are awarded as friends sign up with your code and trade",
                                 style: Theme.of(context)
                                     .textTheme
-                                    .bodyText1!
+                                    .bodyMedium!
                                     .copyWith(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w500,
@@ -204,7 +204,7 @@ class _RewardScreenState extends State<RewardScreen> {
                                         "Read More ",
                                         style: Theme.of(context)
                                             .textTheme
-                                            .bodyText2!
+                                            .bodySmall!
                                             .copyWith(
                                               fontWeight: FontWeight.w500,
                                               fontSize: 12,

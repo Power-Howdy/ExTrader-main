@@ -32,7 +32,7 @@ class _LinkScreenState extends State<LinkScreen> {
                 const BackIcon(),
                 Text(
                   "Payment Method",
-                  style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                         fontSize: 16,
                         fontWeight: FontWeight.w800,
                       ),
@@ -54,7 +54,7 @@ class _LinkScreenState extends State<LinkScreen> {
                       const SizedBox(height: 30),
                       Text(
                         "Link your card",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 24,
                               fontWeight: FontWeight.w800,
                             ),
@@ -62,7 +62,7 @@ class _LinkScreenState extends State<LinkScreen> {
                       const SizedBox(height: 10),
                       Text(
                         "By adding a new card, you agree to the",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
                               color: HexColor(AppTheme.secondaryColorString!),
@@ -71,7 +71,7 @@ class _LinkScreenState extends State<LinkScreen> {
                       const SizedBox(height: 6),
                       Text(
                         "credit/debit card terms.",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 12,
                               fontWeight: FontWeight.w800,
                               color: HexColor(AppTheme.primaryColorString!),

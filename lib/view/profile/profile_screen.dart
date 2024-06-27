@@ -28,7 +28,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 const BackIcon(),
                 Text(
                   "Profile",
-                  style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                         fontSize: 16,
                         fontWeight: FontWeight.w800,
                       ),
@@ -70,7 +70,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                       "Profile Token",
                                       style: Theme.of(context)
                                           .textTheme
-                                          .bodyText1!
+                                          .bodyMedium!
                                           .copyWith(
                                             fontSize: 14,
                                             fontWeight: FontWeight.w800,
@@ -81,7 +81,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                       "8219F492-3FF3-401C-A2C9-FEB4C9E73E6D",
                                       style: Theme.of(context)
                                           .textTheme
-                                          .bodyText1!
+                                          .bodyMedium!
                                           .copyWith(
                                             fontSize: 12,
                                             fontWeight: FontWeight.w400,
@@ -104,7 +104,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                     "Copy",
                                     style: Theme.of(context)
                                         .textTheme
-                                        .bodyText2!
+                                        .bodySmall!
                                         .copyWith(
                                           fontWeight: FontWeight.w700,
                                           fontSize: 14,
@@ -171,7 +171,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                                     : "Email",
                                         style: Theme.of(context)
                                             .textTheme
-                                            .bodyText1!
+                                            .bodyMedium!
                                             .copyWith(
                                               fontSize: 14,
                                               fontWeight: FontWeight.w800,
@@ -182,7 +182,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                         Icons.arrow_forward_ios,
                                         color: Theme.of(context)
                                             .textTheme
-                                            .bodyText1!
+                                            .bodyMedium!
                                             .color,
                                         size: 12,
                                       ),

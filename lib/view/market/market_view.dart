@@ -43,7 +43,7 @@ class _MarketViewState extends State<MarketView> {
               ),
               Text(
                 "Market",
-                style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                       fontSize: 16,
                       fontWeight: FontWeight.w800,
                     ),
@@ -61,7 +61,7 @@ class _MarketViewState extends State<MarketView> {
                       width: 24,
                       child: SvgPicture.asset(
                         imageAssets.h24,
-                        color: Theme.of(context).textTheme.bodyText1!.color,
+                        color: Theme.of(context).textTheme.bodyMedium!.color,
                       ),
                     ),
                   ),
@@ -100,7 +100,7 @@ class _MarketViewState extends State<MarketView> {
                       ),
                       child: TextFormField(
                         controller: homeController.searchController.value,
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 16,
                               fontWeight: FontWeight.w600,
                             ),
@@ -117,7 +117,7 @@ class _MarketViewState extends State<MarketView> {
                                 imageAssets.search,
                                 color: Theme.of(context)
                                     .textTheme
-                                    .bodyText1!
+                                    .bodyMedium!
                                     .color,
                               ),
                             ),
@@ -141,7 +141,7 @@ class _MarketViewState extends State<MarketView> {
                           hintText: "Search",
                           hintStyle: Theme.of(context)
                               .textTheme
-                              .bodyText1!
+                              .bodyMedium!
                               .copyWith(
                                 fontSize: 16,
                                 fontWeight: FontWeight.w400,

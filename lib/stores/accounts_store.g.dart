@@ -68,3 +68,6 @@ accounts: ${accounts}
     ''';
   }
 }
+
+class InvalidType {
+}

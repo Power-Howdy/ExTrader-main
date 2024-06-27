@@ -35,7 +35,7 @@ class _SignupScreenState extends State<SignupScreen> {
                       const SizedBox(height: 50),
                       Text(
                         "Join CoinSpace",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 24,
                               fontWeight: FontWeight.w800,
                             ),
@@ -47,7 +47,7 @@ class _SignupScreenState extends State<SignupScreen> {
                             "Create your account. ",
                             style: Theme.of(context)
                                 .textTheme
-                                .bodyText1!
+                                .bodyMedium!
                                 .copyWith(
                                   fontSize: 16,
                                   fontWeight: FontWeight.w400,
@@ -59,7 +59,7 @@ class _SignupScreenState extends State<SignupScreen> {
                             "Learn more",
                             style: Theme.of(context)
                                 .textTheme
-                                .bodyText1!
+                                .bodyMedium!
                                 .copyWith(
                                   fontSize: 16,
                                   fontWeight: FontWeight.w400,
@@ -159,7 +159,7 @@ class _SignupScreenState extends State<SignupScreen> {
                                 "I certify that I am 18 years of age or older, and I",
                                 style: Theme.of(context)
                                     .textTheme
-                                    .bodyText1!
+                                    .bodyMedium!
                                     .copyWith(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w400,
@@ -174,7 +174,7 @@ class _SignupScreenState extends State<SignupScreen> {
                                     "agree to the ",
                                     style: Theme.of(context)
                                         .textTheme
-                                        .bodyText1!
+                                        .bodyMedium!
                                         .copyWith(
                                           fontSize: 14,
                                           fontWeight: FontWeight.w400,
@@ -186,7 +186,7 @@ class _SignupScreenState extends State<SignupScreen> {
                                     "User Agreement ",
                                     style: Theme.of(context)
                                         .textTheme
-                                        .bodyText1!
+                                        .bodyMedium!
                                         .copyWith(
                                           fontSize: 14,
                                           fontWeight: FontWeight.w400,
@@ -198,7 +198,7 @@ class _SignupScreenState extends State<SignupScreen> {
                                     "and",
                                     style: Theme.of(context)
                                         .textTheme
-                                        .bodyText1!
+                                        .bodyMedium!
                                         .copyWith(
                                           fontSize: 14,
                                           fontWeight: FontWeight.w400,
@@ -213,7 +213,7 @@ class _SignupScreenState extends State<SignupScreen> {
                                 "Privacy Policy",
                                 style: Theme.of(context)
                                     .textTheme
-                                    .bodyText1!
+                                    .bodyMedium!
                                     .copyWith(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w400,

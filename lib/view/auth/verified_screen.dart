@@ -42,7 +42,7 @@ class _VerifiedScreenState extends State<VerifiedScreen> {
             Center(
               child: Text(
                 "You're verified!",
-                style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                       fontSize: 24,
                       fontWeight: FontWeight.w800,
                     ),
@@ -53,7 +53,7 @@ class _VerifiedScreenState extends State<VerifiedScreen> {
             Center(
               child: Text(
                 "Now you can fund your account so you're\nready to invest in crypto.",
-                style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                       fontSize: 16,
                       fontWeight: FontWeight.w400,
                       color: HexColor(AppTheme.secondaryColorString!),

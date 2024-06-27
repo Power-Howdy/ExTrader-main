@@ -122,7 +122,7 @@ class _BuySellMarketState extends State<BuySellMarketPage> {
                 const BackIcon(),
                 Text(
                   widget.pair_name,
-                  style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                         fontSize: 16,
                         fontWeight: FontWeight.w800,
                       ),
@@ -190,7 +190,7 @@ class _BuySellMarketState extends State<BuySellMarketPage> {
                   children: [
                     Text(
                       ask.toString(),
-                      style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             fontSize: 32,
                             fontWeight: FontWeight.w800,
                           ),
@@ -203,7 +203,7 @@ class _BuySellMarketState extends State<BuySellMarketPage> {
                     ),
                     Text(
                       bid.toString(),
-                      style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             fontSize: 32,
                             fontWeight: FontWeight.w800,
                           ),

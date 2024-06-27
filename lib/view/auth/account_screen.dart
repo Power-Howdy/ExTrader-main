@@ -46,7 +46,7 @@ class _AccountScreenState extends State<AccountScreen> {
                   const SizedBox(height: 20),
                   Text(
                     "Let's secure your account",
-                    style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                    style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                           fontSize: 24,
                           fontWeight: FontWeight.w800,
                         ),
@@ -71,7 +71,7 @@ class _AccountScreenState extends State<AccountScreen> {
                                               : "Step3. Verify your identity",
                                       style: Theme.of(context)
                                           .textTheme
-                                          .bodyText1!
+                                          .bodyMedium!
                                           .copyWith(
                                               fontSize: 14,
                                               fontWeight: FontWeight.w600,
@@ -93,7 +93,7 @@ class _AccountScreenState extends State<AccountScreen> {
                                             "5 min",
                                             style: Theme.of(context)
                                                 .textTheme
-                                                .bodyText1!
+                                                .bodyMedium!
                                                 .copyWith(
                                                   fontSize: 14,
                                                   fontWeight: FontWeight.w600,
@@ -127,7 +127,7 @@ class _AccountScreenState extends State<AccountScreen> {
                                               : "Step3. Verify your identity",
                                       style: Theme.of(context)
                                           .textTheme
-                                          .bodyText1!
+                                          .bodyMedium!
                                           .copyWith(
                                               fontSize: 14,
                                               fontWeight: FontWeight.w600,
@@ -149,7 +149,7 @@ class _AccountScreenState extends State<AccountScreen> {
                                             i == 1 ? "1 min" : "5 min",
                                             style: Theme.of(context)
                                                 .textTheme
-                                                .bodyText1!
+                                                .bodyMedium!
                                                 .copyWith(
                                                   fontSize: 14,
                                                   fontWeight: FontWeight.w600,

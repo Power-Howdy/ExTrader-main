@@ -33,7 +33,7 @@ class CardView extends StatelessWidget {
                             "Total Balance (USD)",
                             style: Theme.of(context)
                                 .textTheme
-                                .bodyText1!
+                                .bodyMedium!
                                 .copyWith(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w600,
@@ -55,7 +55,7 @@ class CardView extends StatelessWidget {
                       const SizedBox(height: 8),
                       Text(
                         "1,008,612",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 28,
                               fontWeight: FontWeight.w800,
                             ),
@@ -78,7 +78,7 @@ class CardView extends StatelessWidget {
                   children: [
                     Text(
                       "Total Profit",
-                      style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             fontSize: 8,
                             fontWeight: FontWeight.w600,
                             color: HexColor(AppTheme.secondaryColorString!),
@@ -87,7 +87,7 @@ class CardView extends StatelessWidget {
                     const SizedBox(height: 8),
                     Text(
                       "+93.12%",
-                      style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             fontSize: 12,
                             fontWeight: FontWeight.w600,
                             color: HexColor(AppTheme.greenColorString!),
@@ -108,7 +108,7 @@ class CardView extends StatelessWidget {
                   children: [
                     Text(
                       "Today Profit",
-                      style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             fontSize: 8,
                             fontWeight: FontWeight.w600,
                             color: HexColor(AppTheme.secondaryColorString!),
@@ -117,7 +117,7 @@ class CardView extends StatelessWidget {
                     const SizedBox(height: 8),
                     Text(
                       "-11.52%",
-                      style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             fontSize: 12,
                             fontWeight: FontWeight.w600,
                             color: HexColor(AppTheme.redColorString!),
@@ -187,7 +187,7 @@ class CardView extends StatelessWidget {
           const SizedBox(height: 30),
           Text(
             text1,
-            style: Theme.of(Get.context!).textTheme.bodyText1!.copyWith(
+            style: Theme.of(Get.context!).textTheme.bodyMedium!.copyWith(
                   fontSize: 18,
                   fontWeight: FontWeight.w700,
                 ),
@@ -212,7 +212,7 @@ class CardView extends StatelessWidget {
                   const SizedBox(height: 15),
                   Text(
                     text2,
-                    style: Theme.of(Get.context!).textTheme.bodyText1!.copyWith(
+                    style: Theme.of(Get.context!).textTheme.bodyMedium!.copyWith(
                           fontSize: 14,
                           fontWeight: FontWeight.w800,
                           color: HexColor(AppTheme.secondaryColorString!),
@@ -236,7 +236,7 @@ class CardView extends StatelessWidget {
                   const SizedBox(height: 15),
                   Text(
                     text3,
-                    style: Theme.of(Get.context!).textTheme.bodyText1!.copyWith(
+                    style: Theme.of(Get.context!).textTheme.bodyMedium!.copyWith(
                           fontSize: 14,
                           fontWeight: FontWeight.w800,
                           color: HexColor(AppTheme.secondaryColorString!),

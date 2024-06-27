@@ -93,7 +93,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       const SizedBox(height: 20),
                       Text(
                         "Welcome",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 24,
                               fontWeight: FontWeight.w800,
                             ),
@@ -101,7 +101,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       const SizedBox(height: 10),
                       Text(
                         "Sign in to your account",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 16,
                               fontWeight: FontWeight.w400,
                               color: HexColor(AppTheme.secondaryColorString!),
@@ -154,7 +154,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           "Forgot password?",
                           style: Theme.of(context)
                               .textTheme
-                              .bodyText1!
+                              .bodyMedium!
                               .copyWith(
                                 fontSize: 16,
                                 fontWeight: FontWeight.w800,
@@ -180,7 +180,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 children: [
                   Text(
                     "Don’t have an account? ",
-                    style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                    style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                           fontSize: 14,
                           fontWeight: FontWeight.w800,
                           color: HexColor(AppTheme.secondaryColorString!),
@@ -188,7 +188,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   Text(
                     "Sign Up",
-                    style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                    style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                           fontSize: 14,
                           fontWeight: FontWeight.w800,
                           color: HexColor(AppTheme.primaryColorString!),

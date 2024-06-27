@@ -32,7 +32,7 @@ class _NumberScreenState extends State<NumberScreen> {
             const SizedBox(height: 30),
             Text(
               "Phone Number",
-              style: Theme.of(context).textTheme.bodyText1!.copyWith(
+              style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                     fontSize: 24,
                     fontWeight: FontWeight.w800,
                   ),
@@ -40,7 +40,7 @@ class _NumberScreenState extends State<NumberScreen> {
             const SizedBox(height: 10),
             Text(
               "Enter your phone number so we can text\nyou an authentication code.",
-              style: Theme.of(context).textTheme.bodyText1!.copyWith(
+              style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                     fontSize: 16,
                     fontWeight: FontWeight.w400,
                     color: HexColor(AppTheme.secondaryColorString!),

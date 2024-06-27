@@ -40,7 +40,7 @@ class _AppSettingScreenState extends State<AppSettingScreen> {
                 const BackIcon(),
                 Text(
                   "App Settings",
-                  style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                         fontSize: 16,
                         fontWeight: FontWeight.w800,
                       ),
@@ -109,7 +109,7 @@ class _AppSettingScreenState extends State<AppSettingScreen> {
                                             : "Preference",
                                 style: Theme.of(context)
                                     .textTheme
-                                    .bodyText1!
+                                    .bodyMedium!
                                     .copyWith(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w800,
@@ -120,7 +120,7 @@ class _AppSettingScreenState extends State<AppSettingScreen> {
                                 Icons.arrow_forward_ios,
                                 color: Theme.of(context)
                                     .textTheme
-                                    .bodyText1!
+                                    .bodyMedium!
                                     .color,
                                 size: 12,
                               ),

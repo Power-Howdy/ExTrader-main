@@ -39,7 +39,7 @@ class _PersonalInformationScreenState extends State<PersonalInformationScreen> {
                       const SizedBox(height: 50),
                       Text(
                         "Join CoinSpace",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 24,
                               fontWeight: FontWeight.w800,
                             ),
@@ -77,7 +77,7 @@ class _PersonalInformationScreenState extends State<PersonalInformationScreen> {
                       const SizedBox(height: 20),
                       Text(
                         "We use 128-bit encryption for added security, and this\ninformation is only used for identity verification purposes.",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
                               color: HexColor(AppTheme.secondaryColorString!),

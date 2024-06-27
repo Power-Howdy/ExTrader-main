@@ -57,19 +57,19 @@ class CoinView extends StatelessWidget {
                   children: [
                     Text(
                       text1,
-                      style: Theme.of(context).textTheme.bodyText1!.copyWith(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w800,
-                          ),
+                      // style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                      //       fontSize: 16,
+                      //       fontWeight: FontWeight.w800,
+                      //     ),
                     ),
                     const SizedBox(height: 8),
                     Text(
                       text2,
-                      style: Theme.of(context).textTheme.bodyText1!.copyWith(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w400,
-                            color: HexColor(AppTheme.secondaryColorString!),
-                          ),
+                      // style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                      //       fontSize: 12,
+                      //       fontWeight: FontWeight.w400,
+                      //       color: HexColor(AppTheme.secondaryColorString!),
+                      //     ),
                     ),
                   ],
                 ),
@@ -88,19 +88,19 @@ class CoinView extends StatelessWidget {
                   children: [
                     Text(
                       text3,
-                      style: Theme.of(context).textTheme.bodyText1!.copyWith(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w800,
-                          ),
+                      // style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                      //       fontSize: 14,
+                      //       fontWeight: FontWeight.w800,
+                      //     ),
                     ),
                     const SizedBox(height: 8),
                     Text(
                       text4,
-                      style: Theme.of(context).textTheme.bodyText1!.copyWith(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w400,
-                            color: HexColor(AppTheme.greenColorString!),
-                          ),
+                      // style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                      //       fontSize: 12,
+                      //       fontWeight: FontWeight.w400,
+                      //       color: HexColor(AppTheme.greenColorString!),
+                      //     ),
                     ),
                   ],
                 ),

@@ -38,7 +38,7 @@ class _SelectScreenState extends State<SelectScreen> {
                       const SizedBox(height: 50),
                       Text(
                         "If you're a citizen or more than one\ncountry, please pick one",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 16,
                               fontWeight: FontWeight.w400,
                               color: HexColor(AppTheme.secondaryColorString!),
@@ -51,7 +51,7 @@ class _SelectScreenState extends State<SelectScreen> {
                         prefix: null,
                         sufix: Icon(
                           Icons.keyboard_arrow_down,
-                          color: Theme.of(context).textTheme.bodyText1!.color,
+                          color: Theme.of(context).textTheme.bodyMedium!.color,
                           size: 20,
                         ),
                         textEditingController:

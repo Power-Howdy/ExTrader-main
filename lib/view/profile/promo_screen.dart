@@ -29,7 +29,7 @@ class _PromoScreenState extends State<PromoScreen> {
                 const BackIcon(),
                 Text(
                   "Promo Code",
-                  style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                         fontSize: 16,
                         fontWeight: FontWeight.w800,
                       ),
@@ -51,7 +51,7 @@ class _PromoScreenState extends State<PromoScreen> {
                       const SizedBox(height: 30),
                       Text(
                         "Enter promo code",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 24,
                               fontWeight: FontWeight.w800,
                             ),

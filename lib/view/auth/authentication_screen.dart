@@ -38,7 +38,7 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
                       const SizedBox(height: 30),
                       Text(
                         "Enter authentication code",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 24,
                               fontWeight: FontWeight.w800,
                             ),
@@ -46,7 +46,7 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
                       const SizedBox(height: 10),
                       Text(
                         "Enter the 7-diait code we just texted\nto your phone number",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 16,
                               fontWeight: FontWeight.w400,
                               color: HexColor(AppTheme.secondaryColorString!),

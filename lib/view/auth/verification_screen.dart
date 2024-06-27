@@ -56,7 +56,7 @@ class _VerificationScreenState extends State<VerificationScreen> {
             Center(
               child: Text(
                 "Verification still processing",
-                style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                       fontSize: 24,
                       fontWeight: FontWeight.w800,
                     ),
@@ -67,7 +67,7 @@ class _VerificationScreenState extends State<VerificationScreen> {
             Center(
               child: Text(
                 "Your ID requires additional verification. We\nwill email you once verification has been\ncompleted.",
-                style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                       fontSize: 16,
                       fontWeight: FontWeight.w400,
                       color: HexColor(AppTheme.secondaryColorString!),

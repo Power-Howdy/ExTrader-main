@@ -42,7 +42,7 @@ class _SplashScreenState extends State<SplashScreen> {
             const SizedBox(height: 15),
             Text(
               "ExTrader",
-              style: Theme.of(context).textTheme.bodyText1!.copyWith(
+              style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                     fontSize: 24,
                     fontWeight: FontWeight.w800,
                   ),

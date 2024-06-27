@@ -59,7 +59,7 @@ class _QrViewState extends State<QrView> {
               Center(
                 child: Text(
                   "RECEIVE",
-                  style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                         fontSize: 16,
                         fontWeight: FontWeight.w800,
                       ),
@@ -89,7 +89,7 @@ class _QrViewState extends State<QrView> {
                           child: Text(
                             "Transfer Code",
                             style:
-                                Theme.of(context).textTheme.bodyText1!.copyWith(
+                                Theme.of(context).textTheme.bodyMedium!.copyWith(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w800,
                                     ),
@@ -101,7 +101,7 @@ class _QrViewState extends State<QrView> {
                             "Send and receive USD stablecoins\nor crypto via QR code",
                             style: Theme.of(context)
                                 .textTheme
-                                .bodyText1!
+                                .bodyMedium!
                                 .copyWith(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w400,

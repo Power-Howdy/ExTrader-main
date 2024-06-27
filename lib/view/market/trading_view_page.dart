@@ -43,7 +43,7 @@ class _TradingViewPageState extends State<TradingViewPage> {
                 const BackIcon(),
                 Text(
                   widget.pair_name,
-                  style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                         fontSize: 16,
                         fontWeight: FontWeight.w800,
                       ),
@@ -62,7 +62,7 @@ class _TradingViewPageState extends State<TradingViewPage> {
                         width: 24,
                         child: SvgPicture.asset(
                           DefaultImages.m21,
-                          color: Theme.of(context).textTheme.bodyText1!.color,
+                          color: Theme.of(context).textTheme.bodyMedium!.color,
                         ),
                       ),
                     ),
@@ -82,7 +82,7 @@ class _TradingViewPageState extends State<TradingViewPage> {
                           width: 24,
                           child: SvgPicture.asset(
                             DefaultImages.addPosition,
-                            color: Theme.of(context).textTheme.bodyText1!.color,
+                            color: Theme.of(context).textTheme.bodyMedium!.color,
                           ),
                         )),
                   ],

@@ -47,7 +47,7 @@ class QuoteCard extends StatelessWidget {
                           Text(
                             symbol.symbol,
                             style:
-                                Theme.of(context).textTheme.bodyText1!.copyWith(
+                                Theme.of(context).textTheme.bodyMedium!.copyWith(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w800,
                                     ),
@@ -56,14 +56,14 @@ class QuoteCard extends StatelessWidget {
                       ),
                       Text(
                         symbol.timestmp,
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 8,
                               fontWeight: FontWeight.w400,
                             ),
                       ),
                       Text(
                         "Spread:",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 11,
                               fontWeight: FontWeight.w400,
                               color: HexColor(AppTheme.greenColorString!),
@@ -80,7 +80,7 @@ class QuoteCard extends StatelessWidget {
                     children: [
                       Text(
                         symbol.bid.toString(),
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 14,
                               fontWeight: FontWeight.w800,
                               color: !symbol.ishigh
@@ -91,7 +91,7 @@ class QuoteCard extends StatelessWidget {
                       const SizedBox(height: 8),
                       Text(
                         "Low: ${symbol.low}",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
                               color: index == 0 || index == 1
@@ -110,7 +110,7 @@ class QuoteCard extends StatelessWidget {
                     children: [
                       Text(
                         symbol.ask.toString(),
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 14,
                               fontWeight: FontWeight.w800,
                               color: !symbol.ishigh
@@ -121,7 +121,7 @@ class QuoteCard extends StatelessWidget {
                       const SizedBox(height: 8),
                       Text(
                         "High: ${symbol.low}",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
                               color: index == 2

@@ -98,7 +98,7 @@ class _ScanScreenState extends State<ScanScreen> {
                   Center(
                     child: Text(
                       "Back of your ID",
-                      style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             fontSize: 24,
                             fontWeight: FontWeight.w800,
                           ),
@@ -109,7 +109,7 @@ class _ScanScreenState extends State<ScanScreen> {
                   Center(
                     child: Text(
                       "Hold up your ID and take a picture.\nYour entire ID must be in the frame.",
-                      style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             fontSize: 16,
                             fontWeight: FontWeight.w400,
                             color: HexColor(AppTheme.secondaryColorString!),
@@ -156,7 +156,7 @@ class _ScanScreenState extends State<ScanScreen> {
                         width: 40,
                         child: SvgPicture.asset(
                           imageAssets.h1,
-                          color: Theme.of(context).textTheme.bodyText1!.color,
+                          color: Theme.of(context).textTheme.bodyMedium!.color,
                         ),
                       )
                     ],

@@ -18,7 +18,7 @@ class BackIcon extends StatelessWidget {
         child: SvgPicture.asset(
           imageAssets.h12,
           fit: BoxFit.fill,
-          color: Theme.of(context).textTheme.bodyText1!.color,
+          // color: Theme.of(context).textTheme.bodyMedium!.color,
         ),
       ),
     );

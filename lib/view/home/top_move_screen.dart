@@ -26,7 +26,7 @@ class _TopMoveScreenState extends State<TopMoveScreen> {
                 const BackIcon(),
                 Text(
                   "Top Movers",
-                  style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                         fontSize: 16,
                         fontWeight: FontWeight.w800,
                       ),
@@ -40,7 +40,7 @@ class _TopMoveScreenState extends State<TopMoveScreen> {
             const SizedBox(height: 20),
             Text(
               "Top Gainers",
-              style: Theme.of(context).textTheme.bodyText1!.copyWith(
+              style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                     fontSize: 16,
                     fontWeight: FontWeight.w800,
                   ),

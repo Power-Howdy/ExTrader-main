@@ -31,7 +31,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                 const BackIcon(),
                 Text(
                   "Notifications",
-                  style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                         fontSize: 16,
                         fontWeight: FontWeight.w800,
                       ),
@@ -50,7 +50,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                   const SizedBox(height: 30),
                   Text(
                     "Push Notifications",
-                    style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                    style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                           fontSize: 16,
                           fontWeight: FontWeight.w800,
                           color: HexColor(AppTheme.secondaryColorString!),
@@ -62,7 +62,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                     children: [
                       Text(
                         "Turn On / Off ",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 14,
                               fontWeight: FontWeight.w800,
                             ),
@@ -90,7 +90,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                   const SizedBox(height: 30),
                   Text(
                     "Customize Notifications",
-                    style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                    style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                           fontSize: 16,
                           fontWeight: FontWeight.w800,
                           color: HexColor(AppTheme.secondaryColorString!),
@@ -118,7 +118,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                                                 : "News",
                                     style: Theme.of(context)
                                         .textTheme
-                                        .bodyText1!
+                                        .bodyMedium!
                                         .copyWith(
                                           fontSize: 14,
                                           fontWeight: FontWeight.w800,
@@ -135,7 +135,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                                                 : "In app",
                                     style: Theme.of(context)
                                         .textTheme
-                                        .bodyText1!
+                                        .bodyMedium!
                                         .copyWith(
                                           fontSize: 12,
                                           fontWeight: FontWeight.w400,
@@ -149,7 +149,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                             Icon(
                               Icons.arrow_forward_ios,
                               color:
-                                  Theme.of(context).textTheme.bodyText1!.color,
+                                  Theme.of(context).textTheme.bodyMedium!.color,
                               size: 12,
                             ),
                           ],

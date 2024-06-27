@@ -44,7 +44,7 @@ class _DoneScreenState extends State<DoneScreen> {
                 Center(
                   child: Text(
                     "All Done",
-                    style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                    style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                           fontSize: 24,
                           fontWeight: FontWeight.w800,
                         ),
@@ -55,7 +55,7 @@ class _DoneScreenState extends State<DoneScreen> {
                 Center(
                   child: Text(
                     "Congratulations! Your account has been\nsuccessfully added.",
-                    style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                    style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                           fontSize: 16,
                           fontWeight: FontWeight.w400,
                           color: HexColor(AppTheme.secondaryColorString!),

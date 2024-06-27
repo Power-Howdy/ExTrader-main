@@ -37,7 +37,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                       },
                       child: Text(
                         "SKIP",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 14,
                               fontWeight: FontWeight.w800,
                               color: HexColor(AppTheme.secondaryColorString!),
@@ -69,7 +69,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                 authController.flag.value == 1
                     ? "World’s most powerful\ncrypto exchange"
                     : "Buy \$ Sell it instantly",
-                style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                       fontSize: 24,
                       fontWeight: FontWeight.w800,
                       height: 1.2,
@@ -83,7 +83,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                 authController.flag.value == 1
                     ? "The most advanced trading tools like margin\nand bot trading with hundreds of new assets"
                     : "Purchase crypto and cash out with your\ncredit card or bank account",
-                style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                       fontSize: 14,
                       fontWeight: FontWeight.w400,
                       color: HexColor(AppTheme.secondaryColorString!),

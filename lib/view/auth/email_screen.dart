@@ -42,7 +42,7 @@ class _EmailScreenState extends State<EmailScreen> {
             Center(
               child: Text(
                 "Verify your email",
-                style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                       fontSize: 24,
                       fontWeight: FontWeight.w800,
                     ),
@@ -53,7 +53,7 @@ class _EmailScreenState extends State<EmailScreen> {
             Center(
               child: Text(
                 "We sent a verification email to . Please tap\nthe link inside that email to continue.",
-                style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                       fontSize: 16,
                       fontWeight: FontWeight.w400,
                       color: HexColor(AppTheme.secondaryColorString!),

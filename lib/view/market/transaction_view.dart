@@ -29,7 +29,7 @@ class TransactionView extends StatelessWidget {
                   children: [
                     Text(
                       "Order Book",
-                      style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
                           ),
@@ -37,7 +37,7 @@ class TransactionView extends StatelessWidget {
                     const SizedBox(width: 20),
                     Text(
                       "Trade History",
-                      style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             fontSize: 16,
                             fontWeight: FontWeight.w400,
                             color: HexColor(AppTheme.secondaryColorString!),
@@ -91,7 +91,7 @@ class TransactionView extends StatelessWidget {
                                                     : i == 8
                                                         ? "0.014535"
                                                         : "0.009921",
-                    style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                    style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                           fontSize: 12,
                           fontWeight: FontWeight.w600,
                         ),
@@ -118,7 +118,7 @@ class TransactionView extends StatelessWidget {
                                                         : i == 8
                                                             ? "38,417.09"
                                                             : "39,001.82",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 12,
                               fontWeight: FontWeight.w600,
                               color: HexColor(AppTheme.greenColorString!),
@@ -145,7 +145,7 @@ class TransactionView extends StatelessWidget {
                                                         : i == 8
                                                             ? "39,492.01"
                                                             : "39,272.69",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 12,
                               fontWeight: FontWeight.w600,
                               color: HexColor(AppTheme.redColorString!),
@@ -173,7 +173,7 @@ class TransactionView extends StatelessWidget {
                                                     : i == 8
                                                         ? "0.008913"
                                                         : "0.015336",
-                    style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                    style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                           fontSize: 12,
                           fontWeight: FontWeight.w600,
                         ),
@@ -192,7 +192,7 @@ class TransactionView extends StatelessWidget {
                 const EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 15),
             child: Text(
               "Bitcoin News",
-              style: Theme.of(context).textTheme.bodyText1!.copyWith(
+              style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                     fontSize: 16,
                     fontWeight: FontWeight.w800,
                   ),
@@ -234,7 +234,7 @@ class TransactionView extends StatelessWidget {
                                                   : "Market Wrap: Bitcoin Stuck Below \$40K, Altcoins See Less Selling…",
                                   style: Theme.of(context)
                                       .textTheme
-                                      .bodyText1!
+                                      .bodyMedium!
                                       .copyWith(
                                         fontSize: 12,
                                         fontWeight: FontWeight.w400,
@@ -256,7 +256,7 @@ class TransactionView extends StatelessWidget {
                                                   : "CoinDesk • 2h",
                                   style: Theme.of(context)
                                       .textTheme
-                                      .bodyText1!
+                                      .bodyMedium!
                                       .copyWith(
                                         fontSize: 10,
                                         fontWeight: FontWeight.w500,
@@ -316,7 +316,7 @@ class TransactionView extends StatelessWidget {
                 child: Center(
                   child: Text(
                     "Read More",
-                    style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                    style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                           fontSize: 16,
                           fontWeight: FontWeight.w800,
                         ),

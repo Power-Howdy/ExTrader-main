@@ -27,7 +27,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                 const BackIcon(),
                 Text(
                   "Payment Method",
-                  style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                         fontSize: 16,
                         fontWeight: FontWeight.w800,
                       ),
@@ -88,7 +88,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                                         "Credit / Debit Card",
                                         style: Theme.of(context)
                                             .textTheme
-                                            .bodyText1!
+                                            .bodyMedium!
                                             .copyWith(
                                               fontSize: 14,
                                               fontWeight: FontWeight.w800,
@@ -99,7 +99,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                                         "Use any Visa or Mastercard to make\nsmall investments.",
                                         style: Theme.of(context)
                                             .textTheme
-                                            .bodyText1!
+                                            .bodyMedium!
                                             .copyWith(
                                               fontSize: 12,
                                               fontWeight: FontWeight.w400,
@@ -115,7 +115,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                                   Icons.arrow_forward_ios,
                                   color: Theme.of(context)
                                       .textTheme
-                                      .bodyText1!
+                                      .bodyMedium!
                                       .color,
                                   size: 12,
                                 ),

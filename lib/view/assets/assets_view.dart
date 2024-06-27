@@ -43,7 +43,7 @@ class _AssetsViewState extends State<AssetsView> {
                           width: 24,
                           child: SvgPicture.asset(
                             imageAssets.h24,
-                            color: Theme.of(context).textTheme.bodyText1!.color,
+                            color: Theme.of(context).textTheme.bodyMedium!.color,
                           ),
                         ),
                       ),
@@ -77,7 +77,7 @@ class _AssetsViewState extends State<AssetsView> {
                               "Portfolio Value",
                               style: Theme.of(context)
                                   .textTheme
-                                  .bodyText1!
+                                  .bodyMedium!
                                   .copyWith(
                                     fontSize: 16,
                                     fontWeight: FontWeight.w800,
@@ -129,7 +129,7 @@ class _AssetsViewState extends State<AssetsView> {
                                                               : "Current Holdings",
                                                   style: Theme.of(Get.context!)
                                                       .textTheme
-                                                      .bodyText1!
+                                                      .bodyMedium!
                                                       .copyWith(
                                                         fontSize: 18,
                                                         fontWeight:
@@ -137,7 +137,7 @@ class _AssetsViewState extends State<AssetsView> {
                                                         color: i == 0
                                                             ? Theme.of(context)
                                                                 .textTheme
-                                                                .bodyText1!
+                                                                .bodyMedium!
                                                                 .color
                                                             : HexColor(AppTheme
                                                                 .secondaryColorString!),
@@ -177,7 +177,7 @@ class _AssetsViewState extends State<AssetsView> {
                                         "QTY",
                                         style: Theme.of(context)
                                             .textTheme
-                                            .bodyText1!
+                                            .bodyMedium!
                                             .copyWith(
                                               fontSize: 14,
                                               fontWeight: FontWeight.w600,
@@ -203,7 +203,7 @@ class _AssetsViewState extends State<AssetsView> {
                                         "All Time．P/L",
                                         style: Theme.of(context)
                                             .textTheme
-                                            .bodyText1!
+                                            .bodyMedium!
                                             .copyWith(
                                               fontSize: 14,
                                               fontWeight: FontWeight.w600,
@@ -227,7 +227,7 @@ class _AssetsViewState extends State<AssetsView> {
                                         "Price",
                                         style: Theme.of(context)
                                             .textTheme
-                                            .bodyText1!
+                                            .bodyMedium!
                                             .copyWith(
                                               fontSize: 14,
                                               fontWeight: FontWeight.w600,
@@ -324,7 +324,7 @@ class _AssetsViewState extends State<AssetsView> {
                                                           style:
                                                               Theme.of(context)
                                                                   .textTheme
-                                                                  .bodyText1!
+                                                                  .bodyMedium!
                                                                   .copyWith(
                                                                     fontSize:
                                                                         14,
@@ -346,7 +346,7 @@ class _AssetsViewState extends State<AssetsView> {
                                                                   : "56212.58 DOGE",
                                                       style: Theme.of(context)
                                                           .textTheme
-                                                          .bodyText1!
+                                                          .bodyMedium!
                                                           .copyWith(
                                                             fontSize: 12,
                                                             fontWeight:
@@ -376,7 +376,7 @@ class _AssetsViewState extends State<AssetsView> {
                                                                   : "+44,199.00",
                                                       style: Theme.of(context)
                                                           .textTheme
-                                                          .bodyText1!
+                                                          .bodyMedium!
                                                           .copyWith(
                                                             fontSize: 14,
                                                             fontWeight:
@@ -400,7 +400,7 @@ class _AssetsViewState extends State<AssetsView> {
                                                                   : "+1.85%",
                                                       style: Theme.of(context)
                                                           .textTheme
-                                                          .bodyText1!
+                                                          .bodyMedium!
                                                           .copyWith(
                                                             fontSize: 12,
                                                             fontWeight:
@@ -434,7 +434,7 @@ class _AssetsViewState extends State<AssetsView> {
                                                                   : "0.1382",
                                                       style: Theme.of(context)
                                                           .textTheme
-                                                          .bodyText1!
+                                                          .bodyMedium!
                                                           .copyWith(
                                                             fontSize: 14,
                                                             fontWeight:
@@ -452,7 +452,7 @@ class _AssetsViewState extends State<AssetsView> {
                                                                   : "+0.23%",
                                                       style: Theme.of(context)
                                                           .textTheme
-                                                          .bodyText1!
+                                                          .bodyMedium!
                                                           .copyWith(
                                                             fontSize: 12,
                                                             fontWeight:

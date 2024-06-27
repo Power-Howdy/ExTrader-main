@@ -79,7 +79,7 @@ class BuyBottomSheet extends StatelessWidget {
                                     "Market",
                                     style: Theme.of(context)
                                         .textTheme
-                                        .bodyText1!
+                                        .bodyMedium!
                                         .copyWith(
                                           fontSize: 14,
                                           fontWeight: FontWeight.w600,
@@ -100,7 +100,7 @@ class BuyBottomSheet extends StatelessWidget {
                                     "Limit",
                                     style: Theme.of(context)
                                         .textTheme
-                                        .bodyText1!
+                                        .bodyMedium!
                                         .copyWith(
                                           fontSize: 14,
                                           fontWeight: FontWeight.w600,
@@ -121,7 +121,7 @@ class BuyBottomSheet extends StatelessWidget {
                                     "Stop-Limit",
                                     style: Theme.of(context)
                                         .textTheme
-                                        .bodyText1!
+                                        .bodyMedium!
                                         .copyWith(
                                           fontSize: 14,
                                           fontWeight: FontWeight.w600,
@@ -140,7 +140,7 @@ class BuyBottomSheet extends StatelessWidget {
                             "Limit Price",
                             style: Theme.of(context)
                                 .textTheme
-                                .bodyText1!
+                                .bodyMedium!
                                 .copyWith(
                                   fontSize: 14,
                                   fontWeight: FontWeight.w500,
@@ -152,7 +152,7 @@ class BuyBottomSheet extends StatelessWidget {
                           Text(
                             "12.394.00",
                             style:
-                                Theme.of(context).textTheme.bodyText1!.copyWith(
+                                Theme.of(context).textTheme.bodyMedium!.copyWith(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w500,
                                     ),
@@ -161,7 +161,7 @@ class BuyBottomSheet extends StatelessWidget {
                             "  USDT",
                             style: Theme.of(context)
                                 .textTheme
-                                .bodyText1!
+                                .bodyMedium!
                                 .copyWith(
                                   fontSize: 14,
                                   fontWeight: FontWeight.w500,
@@ -178,7 +178,7 @@ class BuyBottomSheet extends StatelessWidget {
                             "Amount",
                             style: Theme.of(context)
                                 .textTheme
-                                .bodyText1!
+                                .bodyMedium!
                                 .copyWith(
                                   fontSize: 14,
                                   fontWeight: FontWeight.w500,
@@ -195,7 +195,7 @@ class BuyBottomSheet extends StatelessWidget {
                               textAlign: TextAlign.end,
                               style: Theme.of(context)
                                   .textTheme
-                                  .bodyText1!
+                                  .bodyMedium!
                                   .copyWith(
                                     fontSize: 14,
                                     fontWeight: FontWeight.w500,
@@ -212,7 +212,7 @@ class BuyBottomSheet extends StatelessWidget {
                               "   BTC",
                               style: Theme.of(context)
                                   .textTheme
-                                  .bodyText1!
+                                  .bodyMedium!
                                   .copyWith(
                                     fontSize: 14,
                                     fontWeight: FontWeight.w500,
@@ -237,7 +237,7 @@ class BuyBottomSheet extends StatelessWidget {
                             "Total",
                             style: Theme.of(context)
                                 .textTheme
-                                .bodyText1!
+                                .bodyMedium!
                                 .copyWith(
                                   fontSize: 14,
                                   fontWeight: FontWeight.w500,
@@ -248,7 +248,7 @@ class BuyBottomSheet extends StatelessWidget {
                           Text(
                             "0 USDT",
                             style:
-                                Theme.of(context).textTheme.bodyText1!.copyWith(
+                                Theme.of(context).textTheme.bodyMedium!.copyWith(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w500,
                                     ),
@@ -261,7 +261,7 @@ class BuyBottomSheet extends StatelessWidget {
                           "Avbl: 823743 USDT",
                           style: Theme.of(context)
                               .textTheme
-                              .bodyText1!
+                              .bodyMedium!
                               .copyWith(
                                 fontSize: 12,
                                 fontWeight: FontWeight.w800,

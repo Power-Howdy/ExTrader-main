@@ -36,7 +36,7 @@ class _BitcoinScreenState extends State<BitcoinScreen> {
                 const BackIcon(),
                 Text(
                   "Bitcoin",
-                  style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                         fontSize: 16,
                         fontWeight: FontWeight.w800,
                       ),
@@ -55,7 +55,7 @@ class _BitcoinScreenState extends State<BitcoinScreen> {
                         width: 24,
                         child: SvgPicture.asset(
                           imageAssets.m21,
-                          color: Theme.of(context).textTheme.bodyText1!.color,
+                          color: Theme.of(context).textTheme.bodyMedium!.color,
                         ),
                       ),
                     ),
@@ -65,7 +65,7 @@ class _BitcoinScreenState extends State<BitcoinScreen> {
                       width: 24,
                       child: SvgPicture.asset(
                         imageAssets.m22,
-                        color: Theme.of(context).textTheme.bodyText1!.color,
+                        color: Theme.of(context).textTheme.bodyMedium!.color,
                       ),
                     )
                   ],
@@ -86,7 +86,7 @@ class _BitcoinScreenState extends State<BitcoinScreen> {
                           const EdgeInsets.only(left: 20, right: 20, top: 30),
                       child: Text(
                         "BTC/USDT",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
                               color: HexColor(AppTheme.secondaryColorString!),
@@ -102,7 +102,7 @@ class _BitcoinScreenState extends State<BitcoinScreen> {
                           Text(
                             "40,168.53",
                             style:
-                                Theme.of(context).textTheme.bodyText1!.copyWith(
+                                Theme.of(context).textTheme.bodyMedium!.copyWith(
                                       fontSize: 28,
                                       fontWeight: FontWeight.w800,
                                     ),
@@ -111,7 +111,7 @@ class _BitcoinScreenState extends State<BitcoinScreen> {
                             "+980.67 (2.16%)",
                             style: Theme.of(context)
                                 .textTheme
-                                .bodyText1!
+                                .bodyMedium!
                                 .copyWith(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w600,
@@ -159,7 +159,7 @@ class _BitcoinScreenState extends State<BitcoinScreen> {
                                         "Price",
                                         style: Theme.of(context)
                                             .textTheme
-                                            .bodyText1!
+                                            .bodyMedium!
                                             .copyWith(
                                               fontSize: 14,
                                               fontWeight: FontWeight.w600,
@@ -169,7 +169,7 @@ class _BitcoinScreenState extends State<BitcoinScreen> {
                                                       ? Colors.white
                                                       : Theme.of(context)
                                                           .textTheme
-                                                          .bodyText1!
+                                                          .bodyMedium!
                                                           .color,
                                             ),
                                       ),
@@ -196,7 +196,7 @@ class _BitcoinScreenState extends State<BitcoinScreen> {
                                         "Depth",
                                         style: Theme.of(context)
                                             .textTheme
-                                            .bodyText1!
+                                            .bodyMedium!
                                             .copyWith(
                                               fontSize: 14,
                                               fontWeight: FontWeight.w600,
@@ -206,7 +206,7 @@ class _BitcoinScreenState extends State<BitcoinScreen> {
                                                       ? Colors.white
                                                       : Theme.of(context)
                                                           .textTheme
-                                                          .bodyText1!
+                                                          .bodyMedium!
                                                           .color,
                                             ),
                                       ),
@@ -233,7 +233,7 @@ class _BitcoinScreenState extends State<BitcoinScreen> {
                                         "Info",
                                         style: Theme.of(context)
                                             .textTheme
-                                            .bodyText1!
+                                            .bodyMedium!
                                             .copyWith(
                                               fontSize: 14,
                                               fontWeight: FontWeight.w600,
@@ -243,7 +243,7 @@ class _BitcoinScreenState extends State<BitcoinScreen> {
                                                       ? Colors.white
                                                       : Theme.of(context)
                                                           .textTheme
-                                                          .bodyText1!
+                                                          .bodyMedium!
                                                           .color,
                                             ),
                                       ),
@@ -284,7 +284,7 @@ class _BitcoinScreenState extends State<BitcoinScreen> {
                                             "About Bitcoin",
                                             style: Theme.of(context)
                                                 .textTheme
-                                                .bodyText1!
+                                                .bodyMedium!
                                                 .copyWith(
                                                   fontSize: 16,
                                                   fontWeight: FontWeight.w800,
@@ -294,7 +294,7 @@ class _BitcoinScreenState extends State<BitcoinScreen> {
                                             "Read More",
                                             style: Theme.of(context)
                                                 .textTheme
-                                                .bodyText1!
+                                                .bodyMedium!
                                                 .copyWith(
                                                   fontSize: 12,
                                                   fontWeight: FontWeight.w800,
@@ -309,7 +309,7 @@ class _BitcoinScreenState extends State<BitcoinScreen> {
                                         "The world's first cryptocurrency, Bitcoin is stored and exchanged securely on the internet through a digital ledger known as a blockchain. Bitcoins are…",
                                         style: Theme.of(context)
                                             .textTheme
-                                            .bodyText1!
+                                            .bodyMedium!
                                             .copyWith(
                                               fontSize: 12,
                                               fontWeight: FontWeight.w400,
@@ -355,7 +355,7 @@ class _BitcoinScreenState extends State<BitcoinScreen> {
                                                     "Rank",
                                                     style: Theme.of(context)
                                                         .textTheme
-                                                        .bodyText1!
+                                                        .bodyMedium!
                                                         .copyWith(
                                                           fontSize: 12,
                                                           fontWeight:
@@ -370,7 +370,7 @@ class _BitcoinScreenState extends State<BitcoinScreen> {
                                                     "2016",
                                                     style: Theme.of(context)
                                                         .textTheme
-                                                        .bodyText1!
+                                                        .bodyMedium!
                                                         .copyWith(
                                                           fontSize: 12,
                                                           fontWeight:

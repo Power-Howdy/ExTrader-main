@@ -38,7 +38,7 @@ class _AddressScreenState extends State<AddressScreen> {
                       const SizedBox(height: 40),
                       Text(
                         "Enter your address",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 24,
                               fontWeight: FontWeight.w800,
                             ),
@@ -46,7 +46,7 @@ class _AddressScreenState extends State<AddressScreen> {
                       const SizedBox(height: 15),
                       Text(
                         "Enter the street address of your\nprimary residence.",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 14,
                               fontWeight: FontWeight.w400,
                               color: HexColor(AppTheme.secondaryColorString!),

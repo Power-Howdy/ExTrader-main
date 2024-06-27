@@ -35,13 +35,13 @@ class _NotificationViewState extends State<NotificationView> {
                 child: SvgPicture.asset(
                   imageAssets.h12,
                   fit: BoxFit.fill,
-                  color: Theme.of(context).textTheme.bodyText1!.color,
+                  color: Theme.of(context).textTheme.bodyMedium!.color,
                 ),
               ),
             ),
             Text(
               "Notifications",
-              style: Theme.of(context).textTheme.bodyText1!.copyWith(
+              style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                     fontSize: 16,
                     fontWeight: FontWeight.w800,
                   ),
@@ -95,7 +95,7 @@ class _NotificationViewState extends State<NotificationView> {
                                                       : "Price Alert • Feb 25",
                               style: Theme.of(context)
                                   .textTheme
-                                  .bodyText1!
+                                  .bodyMedium!
                                   .copyWith(
                                     fontSize: 10,
                                     fontWeight: FontWeight.w500,
@@ -120,7 +120,7 @@ class _NotificationViewState extends State<NotificationView> {
                                                       : "Bitcoin (BTC) is up +5.72% to\n\$34,675.23 in the last 6 hours.",
                               style: Theme.of(context)
                                   .textTheme
-                                  .bodyText1!
+                                  .bodyMedium!
                                   .copyWith(
                                     fontSize: 12,
                                     fontWeight: FontWeight.w400,
@@ -154,7 +154,7 @@ class _NotificationViewState extends State<NotificationView> {
                                                       : "34,675.23",
                               style: Theme.of(context)
                                   .textTheme
-                                  .bodyText1!
+                                  .bodyMedium!
                                   .copyWith(
                                     fontSize: 14,
                                     fontWeight: FontWeight.w800,
@@ -177,7 +177,7 @@ class _NotificationViewState extends State<NotificationView> {
                                                       : "+5.01%",
                               style: Theme.of(context)
                                   .textTheme
-                                  .bodyText1!
+                                  .bodyMedium!
                                   .copyWith(
                                     fontSize: 12,
                                     fontWeight: FontWeight.w400,

@@ -52,7 +52,7 @@ class _ScanScreenState extends State<ScanScreen> {
                 Center(
                   child: Text(
                     "SEND",
-                    style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                    style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                           fontSize: 16,
                           fontWeight: FontWeight.w800,
                           color: Colors.white,
@@ -75,7 +75,7 @@ class _ScanScreenState extends State<ScanScreen> {
                 Center(
                   child: Text(
                     "Scan QR code",
-                    style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                    style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                           fontSize: 14,
                           fontWeight: FontWeight.w800,
                           color: Colors.white,
@@ -86,7 +86,7 @@ class _ScanScreenState extends State<ScanScreen> {
                 Center(
                   child: Text(
                     "Send USD stablecoins or crypto quickly\nand easily",
-                    style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                    style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                           fontSize: 12,
                           fontWeight: FontWeight.w400,
                           height: 1.5,
@@ -105,7 +105,7 @@ class _ScanScreenState extends State<ScanScreen> {
                   child: Center(
                     child: Text(
                       "Choose a QR code from your photos",
-                      style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             fontSize: 12,
                             fontWeight: FontWeight.w400,
                             height: 1.5,
@@ -162,7 +162,7 @@ class _ScanScreenState extends State<ScanScreen> {
                   Center(
                     child: Text(
                       "RECEIVE",
-                      style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             fontSize: 16,
                             fontWeight: FontWeight.w800,
                           ),

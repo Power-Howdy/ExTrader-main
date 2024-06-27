@@ -62,7 +62,7 @@ class _ShareSheetState extends State<ShareSheet> {
                         child: Text(
                           "Share the Bitcoin price chart",
                           style:
-                              Theme.of(context).textTheme.bodyText1!.copyWith(
+                              Theme.of(context).textTheme.bodyMedium!.copyWith(
                                     fontSize: 16,
                                     fontWeight: FontWeight.w800,
                                   ),
@@ -101,7 +101,7 @@ class _ShareSheetState extends State<ShareSheet> {
                                       "CoinSpace",
                                       style: Theme.of(context)
                                           .textTheme
-                                          .bodyText1!
+                                          .bodyMedium!
                                           .copyWith(
                                             fontSize: 16,
                                             fontWeight: FontWeight.w800,
@@ -118,7 +118,7 @@ class _ShareSheetState extends State<ShareSheet> {
                                   "BTC",
                                   style: Theme.of(context)
                                       .textTheme
-                                      .bodyText1!
+                                      .bodyMedium!
                                       .copyWith(
                                         fontSize: 16,
                                         fontWeight: FontWeight.w600,
@@ -135,7 +135,7 @@ class _ShareSheetState extends State<ShareSheet> {
                                   "\$40,168.53",
                                   style: Theme.of(context)
                                       .textTheme
-                                      .bodyText1!
+                                      .bodyMedium!
                                       .copyWith(
                                         fontSize: 26,
                                         fontWeight: FontWeight.w600,
@@ -168,7 +168,7 @@ class _ShareSheetState extends State<ShareSheet> {
                                             "17 MAR 2022 23:20 UTC (1D)",
                                             style: Theme.of(context)
                                                 .textTheme
-                                                .bodyText1!
+                                                .bodyMedium!
                                                 .copyWith(
                                                   fontSize: 12,
                                                   fontWeight: FontWeight.w600,
@@ -192,7 +192,7 @@ class _ShareSheetState extends State<ShareSheet> {
                                             "+980.67 (2.16%)",
                                             style: Theme.of(context)
                                                 .textTheme
-                                                .bodyText1!
+                                                .bodyMedium!
                                                 .copyWith(
                                                   fontSize: 28,
                                                   fontWeight: FontWeight.w600,
@@ -247,7 +247,7 @@ class _ShareSheetState extends State<ShareSheet> {
         const SizedBox(height: 10),
         Text(
           text,
-          style: Theme.of(context).textTheme.bodyText1!.copyWith(
+          style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                 fontSize: 12,
                 fontWeight: FontWeight.w600,
                 color: HexColor(AppTheme.secondaryColorString!),

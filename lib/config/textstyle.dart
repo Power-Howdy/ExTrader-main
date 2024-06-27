@@ -22,41 +22,41 @@ class AppTheme {
 
   static TextTheme _buildTextTheme(TextTheme base) {
     return base.copyWith(
-      headline6: GoogleFonts.manrope(
-          textStyle: TextStyle(
-              color: base.headline6!.color,
-              fontSize: 20,
-              fontWeight: FontWeight.w500)),
-      subtitle1: GoogleFonts.manrope(
-          textStyle: TextStyle(color: base.subtitle1!.color, fontSize: 18)),
-      subtitle2: GoogleFonts.manrope(
-          textStyle: TextStyle(
-              color: base.subtitle2!.color,
-              fontSize: 14,
-              fontWeight: FontWeight.w500)),
-      bodyText2: GoogleFonts.manrope(
-          textStyle: TextStyle(color: base.bodyText2!.color, fontSize: 16)),
-      bodyText1: GoogleFonts.manrope(
-          textStyle: TextStyle(color: base.bodyText1!.color, fontSize: 14)),
-      button: GoogleFonts.manrope(
-          textStyle: TextStyle(
-              color: base.button!.color,
-              fontSize: 14,
-              fontWeight: FontWeight.w500)),
-      caption: GoogleFonts.manrope(
-          textStyle: TextStyle(color: base.caption!.color, fontSize: 12)),
-      headline4: GoogleFonts.manrope(
-          textStyle: TextStyle(color: base.headline4!.color, fontSize: 34)),
-      headline3: GoogleFonts.manrope(
-          textStyle: TextStyle(color: base.headline3!.color, fontSize: 48)),
-      headline2: GoogleFonts.manrope(
-          textStyle: TextStyle(color: base.headline2!.color, fontSize: 60)),
-      headline1: GoogleFonts.manrope(
-          textStyle: TextStyle(color: base.headline1!.color, fontSize: 96)),
-      headline5: GoogleFonts.manrope(
-          textStyle: TextStyle(color: base.headline5!.color, fontSize: 24)),
-      overline: GoogleFonts.manrope(
-          textStyle: TextStyle(color: base.overline!.color, fontSize: 10)),
+      // headline6: GoogleFonts.manrope(
+      //     textStyle: TextStyle(
+      //         color: base.headline6!.color,
+      //         fontSize: 20,
+      //         fontWeight: FontWeight.w500)),
+      // subtitle1: GoogleFonts.manrope(
+      //     textStyle: TextStyle(color: base.subtitle1!.color, fontSize: 18)),
+      // subtitle2: GoogleFonts.manrope(
+      //     textStyle: TextStyle(
+      //         color: base.subtitle2!.color,
+      //         fontSize: 14,
+      //         fontWeight: FontWeight.w500)),
+      // bodySmall: GoogleFonts.manrope(
+      //     textStyle: TextStyle(color: base.bodySmall!.color, fontSize: 16)),
+      // bodyMedium: GoogleFonts.manrope(
+      //     textStyle: TextStyle(color: base.bodyMedium!.color, fontSize: 14)),
+      // button: GoogleFonts.manrope(
+      //     textStyle: TextStyle(
+      //         color: base.button!.color,
+      //         fontSize: 14,
+      //         fontWeight: FontWeight.w500)),
+      // caption: GoogleFonts.manrope(
+      //     textStyle: TextStyle(color: base.caption!.color, fontSize: 12)),
+      // headline4: GoogleFonts.manrope(
+      //     textStyle: TextStyle(color: base.headline4!.color, fontSize: 34)),
+      // headline3: GoogleFonts.manrope(
+      //     textStyle: TextStyle(color: base.headline3!.color, fontSize: 48)),
+      // headline2: GoogleFonts.manrope(
+      //     textStyle: TextStyle(color: base.headline2!.color, fontSize: 60)),
+      // headline1: GoogleFonts.manrope(
+      //     textStyle: TextStyle(color: base.headline1!.color, fontSize: 96)),
+      // headline5: GoogleFonts.manrope(
+      //     textStyle: TextStyle(color: base.headline5!.color, fontSize: 24)),
+      // overline: GoogleFonts.manrope(
+      //     textStyle: TextStyle(color: base.overline!.color, fontSize: 10)),
     );
   }
 
@@ -80,8 +80,8 @@ class AppTheme {
       highlightColor: Colors.transparent,
       canvasColor: Colors.white,
       scaffoldBackgroundColor: Colors.white,
-      backgroundColor: Colors.white,
-      errorColor: Colors.red,
+      // backgroundColor: Colors.white,
+      // errorColor: Colors.red,
       textTheme: _buildTextTheme(base.textTheme),
       primaryTextTheme: _buildTextTheme(base.textTheme),
       platform: TargetPlatform.iOS,
@@ -107,7 +107,7 @@ class AppTheme {
         splashColor: Colors.white24,
         splashFactory: InkRipple.splashFactory,
         canvasColor: Colors.white,
-        backgroundColor: Colors.grey[850],
+        // backgroundColor: Colors.grey[850],
         scaffoldBackgroundColor: Colors.grey[850],
         buttonTheme: ButtonThemeData(
           colorScheme: colorScheme,

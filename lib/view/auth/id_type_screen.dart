@@ -35,7 +35,7 @@ class _IdTypeScreenState extends State<IdTypeScreen> {
                       const SizedBox(height: 40),
                       Text(
                         "Select your ID type",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 24,
                               fontWeight: FontWeight.w800,
                             ),
@@ -43,7 +43,7 @@ class _IdTypeScreenState extends State<IdTypeScreen> {
                       const SizedBox(height: 15),
                       Text(
                         "We'll take 2 pictures of your ID. What\ntype of ID do you want to use?",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 16,
                               fontWeight: FontWeight.w400,
                               color: HexColor(AppTheme.secondaryColorString!),
@@ -111,7 +111,7 @@ class _IdTypeScreenState extends State<IdTypeScreen> {
                                                         : "Passport",
                                                 style: Theme.of(context)
                                                     .textTheme
-                                                    .bodyText1!
+                                                    .bodyMedium!
                                                     .copyWith(
                                                       fontSize: 14,
                                                       fontWeight:
@@ -127,7 +127,7 @@ class _IdTypeScreenState extends State<IdTypeScreen> {
                                                         "Recommended",
                                                         style: Theme.of(context)
                                                             .textTheme
-                                                            .bodyText1!
+                                                            .bodyMedium!
                                                             .copyWith(
                                                               fontSize: 12,
                                                               fontWeight:
@@ -153,7 +153,7 @@ class _IdTypeScreenState extends State<IdTypeScreen> {
                       ),
                       Text(
                         "Your photo ID and actions captured during the ID verification process may constitute biometric data. Please see our Privacy Policy for more information about how we store and use your biometric data.",
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                               fontSize: 12,
                               fontWeight: FontWeight.w400,
                               color: HexColor(AppTheme.secondaryColorString!),
