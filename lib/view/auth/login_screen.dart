@@ -9,6 +9,7 @@ import 'package:coinspace/services/secure_storage.dart';
 import 'package:coinspace/view/auth/signup_screen.dart';
 import 'package:coinspace/view/tab_screen.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:http/http.dart' as http;
 
 class LoginScreen extends StatefulWidget {
@@ -36,28 +37,53 @@ class _LoginScreenState extends State<LoginScreen> {
   Future<void> _login() async {
     String email = _emailController.text;
     String password = _passwordController.text;
+    if(email == "") {
+      Fluttertoast.showToast(msg: "Please fill in your email address");
+      return;
+    }
+    if(password == "") {
+      Fluttertoast.showToast(msg: "Please enter your password.");
+      return;
+    }
     final APIService apiService = APIService();
     try {
-      // var response = await apiService.connect(
-      //   user: "1235711927",
-      //   password: "j7izyye",
-      //   host: '88.150.180.170',
-      //   port: 443,
-      // );
+       Map<String, String> data = {
+        "email": email,
+        "password": password
+       };
+      var response = await apiService.postData(
+        'api/auth/login',
+        data 
+      );
 
       // Assuming 'connect' method returns the response directly for this example
       // Parse response, save access key, and navigate on success
-      //String responseBody = await response.stream.bytesToString();
+      print("test login response: " + response);
+      // String responseBody = await response.stream.bytesToString();
       // await secureStorage.saveAccessKey(response);
-      // print("test");
+      // print("test login response body: " + responseBody);
       Get.offAll(
         const TabScreen(),
         transition: Transition.rightToLeft,
       );
+      Fluttertoast.showToast(
+          msg: "Successfully logged in.",
+          toastLength: Toast.LENGTH_SHORT,
+          gravity: ToastGravity.BOTTOM,
+          timeInSecForIosWeb: 1,
+          backgroundColor: Colors.blue,
+          textColor: Colors.white,
+          fontSize: 16.0);
     } catch (e) {
       // Handle exceptions from the request
-      print("Exception occurred: $e");
-      // Optionally, show an error message to the user
+      Fluttertoast.showToast(
+          msg: "Exception occurred: $e",
+          toastLength: Toast.LENGTH_SHORT,
+          gravity: ToastGravity.BOTTOM,
+          timeInSecForIosWeb: 1,
+          backgroundColor: Colors.red,
+          textColor: Colors.white,
+          fontSize: 16.0);
     }
   }
 
@@ -118,9 +144,10 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                         ),
                         sufix: const SizedBox(),
-                        textEditingController: TextEditingController(),
+                        textEditingController: _emailController,
                         inputType: TextInputType.emailAddress,
                         isObsecure: false,
+                        
                       ),
                       const SizedBox(height: 30),
                       CustomTextField(
@@ -139,8 +166,8 @@ class _LoginScreenState extends State<LoginScreen> {
                             color: HexColor(AppTheme.secondaryColorString!),
                           ),
                         ),
-                        textEditingController: TextEditingController(),
-                        inputType: TextInputType.emailAddress,
+                        textEditingController: _passwordController,
+                        inputType: TextInputType.visiblePassword,
                         isObsecure: false,
                       ),
                       const SizedBox(height: 30),

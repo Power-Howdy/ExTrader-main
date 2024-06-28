@@ -2,8 +2,10 @@
 
 import 'package:coinspace/config.dart';
 import 'package:coinspace/common/theme/app_themes.dart';
+import 'package:coinspace/services/api_service.dart';
 import 'package:coinspace/view/auth/email_screen.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
@@ -13,6 +15,67 @@ class SignupScreen extends StatefulWidget {
 }
 
 class _SignupScreenState extends State<SignupScreen> {
+
+  final TextEditingController _firstName = TextEditingController();
+  final TextEditingController _lastName = TextEditingController();
+  final TextEditingController _email = TextEditingController();
+  final TextEditingController _password = TextEditingController();
+
+  @override
+  void dispose() {
+    _firstName.dispose();
+    _lastName.dispose();
+    _email.dispose();
+    _password.dispose();
+    super.dispose();
+  }
+
+  Future<void> _signup() async {
+    String firstName = _firstName.text;
+    String lastName = _lastName.text;
+    String email = _email.text;
+    String password = _password.text;
+    if(firstName == "") {
+      Fluttertoast.showToast(msg: "Please fill in your first name.");
+      return;
+    }
+    if(lastName == ""){
+      Fluttertoast.showToast(msg: "Please fill in your last name");
+      return;
+    }
+    if(email == "") {
+      Fluttertoast.showToast(msg: "Please fill in your email address");
+      return;
+    }
+    if(password == "") {
+      Fluttertoast.showToast(msg: "Please fill in your password");
+      return;
+    }
+
+    final APIService apiService = APIService();
+    try {
+      Map<String, String> data = {
+        "firstName": firstName,
+        "lastName": lastName,
+        "email": email,
+        "password": password
+      };
+      await apiService.postData("api/auth/signup", data);
+      Fluttertoast.showToast(msg: "Please verify your email.");
+      Get.offAll(const EmailScreen(), transition: Transition.fadeIn);
+
+    } catch (e) {
+      Fluttertoast.showToast(
+          msg: "Error occurred: $e",
+          toastLength: Toast.LENGTH_SHORT,
+          gravity: ToastGravity.BOTTOM,
+          timeInSecForIosWeb: 1,
+          backgroundColor: Colors.red,
+          textColor: Colors.white,
+          fontSize: 16.0);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -79,7 +142,7 @@ class _SignupScreenState extends State<SignupScreen> {
                           ),
                         ),
                         sufix: const SizedBox(),
-                        textEditingController: TextEditingController(),
+                        textEditingController: _firstName,
                         inputType: TextInputType.name,
                         isObsecure: false,
                       ),
@@ -94,7 +157,7 @@ class _SignupScreenState extends State<SignupScreen> {
                           ),
                         ),
                         sufix: const SizedBox(),
-                        textEditingController: TextEditingController(),
+                        textEditingController: _lastName,
                         inputType: TextInputType.name,
                         isObsecure: false,
                       ),
@@ -109,7 +172,7 @@ class _SignupScreenState extends State<SignupScreen> {
                           ),
                         ),
                         sufix: const SizedBox(),
-                        textEditingController: TextEditingController(),
+                        textEditingController: _email,
                         inputType: TextInputType.emailAddress,
                         isObsecure: false,
                       ),
@@ -130,8 +193,8 @@ class _SignupScreenState extends State<SignupScreen> {
                             color: HexColor(AppTheme.secondaryColorString!),
                           ),
                         ),
-                        textEditingController: TextEditingController(),
-                        inputType: TextInputType.emailAddress,
+                        textEditingController: _password,
+                        inputType: TextInputType.visiblePassword,
                         isObsecure: false,
                       ),
                       const SizedBox(height: 30),
@@ -228,12 +291,7 @@ class _SignupScreenState extends State<SignupScreen> {
                       const SizedBox(height: 30),
                       CustomButton(
                         text: "Sign Up",
-                        onTap: () {
-                          Get.to(
-                            () => const EmailScreen(),
-                            transition: Transition.rightToLeft,
-                          );
-                        },
+                        onTap: _signup,
                       ),
                       const SizedBox(height: 20),
                     ],

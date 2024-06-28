@@ -1,13 +1,16 @@
 import 'dart:convert';
 import 'dart:ffi';
 import 'package:coinspace/services/secure_storage.dart';
+import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:fluttertoast/fluttertoast.dart';
 import 'dart:developer' as developer;
 
 class APIService {
-  final String _baseUrl = "extrader-sys.com";
+  final String _baseUrl = "http://192.168.136.192:3000"; //"extrader-sys.com";
   List<String> mt_versions = ['mt4', 'mt5'];
   final SecureStorage secureStorage = SecureStorage();
+
   // Example: GET request
   Future<dynamic> fetchData(String endpoint, int mt_type,
       {Map<String, dynamic>? queryParams}) async {
@@ -70,10 +73,24 @@ class APIService {
       headers: headers,
       body: json.encode(data),
     );
-
+    // return json.decode(response.body);
     if (response.statusCode == 200 || response.statusCode == 201) {
+      print("Raw response body: " + response.body);
+      if (response.body == '') {
+        return "OK"; //{ "msg": "OK"};
+      }
       return json.decode(response.body);
     } else {
+      print(response.statusCode);
+      print(response.body);
+      Fluttertoast.showToast(
+          msg: "Whoops! Something went wrong.",
+          toastLength: Toast.LENGTH_SHORT,
+          gravity: ToastGravity.BOTTOM,
+          timeInSecForIosWeb: 1,
+          backgroundColor: Colors.red,
+          textColor: Colors.white,
+          fontSize: 16.0);
       throw Exception('Failed to post data');
     }
   }
