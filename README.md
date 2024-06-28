@@ -20,4 +20,9 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 
-// Default admin user (Email: "sean.maxwell@gmail.com", Password: "Password@1")
+## How to run along with Express Server
+
+After running your Express API Server, please update the _baseUrl value in the following file.
+lib/services/api_service.dart
+
+> For development, you can set your own ip address.
