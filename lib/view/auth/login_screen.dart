@@ -60,21 +60,24 @@ class _LoginScreenState extends State<LoginScreen> {
       // Parse response, save access key, and navigate on success
       print("login response: ");
       print(response);
-      // String responseBody = await response.stream.bytesToString();
-      // await secureStorage.saveAccessKey(response);
-      // print("test login response body: " + responseBody);
-      Get.offAll(
-        const TabScreen(),
-        transition: Transition.rightToLeft,
-      );
-      Fluttertoast.showToast(
-          msg: "Successfully logged in.",
-          toastLength: Toast.LENGTH_SHORT,
-          gravity: ToastGravity.BOTTOM,
-          timeInSecForIosWeb: 1,
-          backgroundColor: Colors.blue,
-          textColor: Colors.white,
-          fontSize: 16.0);
+      if(response != null) {
+        // String responseBody = await response.stream.bytesToString();
+        // await secureStorage.saveAccessKey(response);
+        // print("test login response body: " + responseBody);
+        Get.offAll(
+          const TabScreen(),
+          transition: Transition.rightToLeft,
+        );
+        Fluttertoast.showToast(
+            msg: "Successfully logged in.",
+            toastLength: Toast.LENGTH_SHORT,
+            gravity: ToastGravity.BOTTOM,
+            timeInSecForIosWeb: 1,
+            backgroundColor: Colors.blue,
+            textColor: Colors.white,
+            fontSize: 16.0);
+      }
+      
     } catch (e) {
       // Handle exceptions from the request
       Fluttertoast.showToast(
