@@ -67,12 +67,14 @@ class APIService {
     if (cookie != null) {
       headers['Cookie'] = cookie;
     }
+    print("sending request");
 
     final response = await http.post(
       Uri.parse('$_baseUrl/$endpoint'),
       headers: headers,
       body: json.encode(data),
     );
+    print("sent request");
     // return json.decode(response.body);
     if (response.statusCode == 200 || response.statusCode == 201) {
       print("Raw response body: " + response.body);
@@ -82,11 +84,8 @@ class APIService {
       return json.decode(response.body);
     } else {
       var errRes = json.decode(response.body);
-      var errMsg = "Whoops! Something went wrong.";
-
-      if(errRes["error"]) {
-        errMsg = errRes["error"];
-      }
+      var errMsg = "Whoops! Something went wrong.\n" + errRes["error"];
+      
       Fluttertoast.showToast(
           msg: errMsg,
           toastLength: Toast.LENGTH_SHORT,

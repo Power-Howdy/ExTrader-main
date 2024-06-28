@@ -58,7 +58,8 @@ class _LoginScreenState extends State<LoginScreen> {
 
       // Assuming 'connect' method returns the response directly for this example
       // Parse response, save access key, and navigate on success
-      print("test login response: " + response);
+      print("login response: ");
+      print(response);
       // String responseBody = await response.stream.bytesToString();
       // await secureStorage.saveAccessKey(response);
       // print("test login response body: " + responseBody);

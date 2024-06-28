@@ -6,6 +6,7 @@ import 'package:coinspace/services/api_service.dart';
 import 'package:coinspace/view/auth/email_screen.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:get/get_connect/http/src/request/request.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
@@ -60,11 +61,13 @@ class _SignupScreenState extends State<SignupScreen> {
         "email": email,
         "password": password
       };
-      await apiService.postData("api/user/add", data);
+
+      await apiService.postData("api/users/add", data);
+      
       Fluttertoast.showToast(msg: "Please verify your email.");
       Get.offAll(const EmailScreen(), transition: Transition.fadeIn);
-
-    } catch (e) {
+    } 
+    catch (e) {
       Fluttertoast.showToast(
           msg: "Error occurred: $e",
           toastLength: Toast.LENGTH_SHORT,
@@ -74,6 +77,7 @@ class _SignupScreenState extends State<SignupScreen> {
           textColor: Colors.white,
           fontSize: 16.0);
     }
+    
   }
 
   @override
