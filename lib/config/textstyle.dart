@@ -34,10 +34,10 @@ class AppTheme {
       //         color: base.subtitle2!.color,
       //         fontSize: 14,
       //         fontWeight: FontWeight.w500)),
-      // bodySmall: GoogleFonts.manrope(
-      //     textStyle: TextStyle(color: base.bodySmall!.color, fontSize: 16)),
-      // bodyMedium: GoogleFonts.manrope(
-      //     textStyle: TextStyle(color: base.bodyMedium!.color, fontSize: 14)),
+      bodySmall: GoogleFonts.manrope(
+          textStyle: TextStyle(color: base.bodySmall!.color, fontSize: 16)),
+      bodyMedium: GoogleFonts.manrope(
+          textStyle: TextStyle(color: base.bodyMedium!.color, fontSize: 14)),
       // button: GoogleFonts.manrope(
       //     textStyle: TextStyle(
       //         color: base.button!.color,

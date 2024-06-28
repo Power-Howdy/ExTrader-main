@@ -13,13 +13,13 @@ mixin _$AccountsStore on _AccountsStore, Store {
       Atom(name: '_AccountsStore.accounts', context: context);
 
   @override
-  ObservableList<InvalidType> get accounts {
+  ObservableList<Account> get accounts {
     _$accountsAtom.reportRead();
     return super.accounts;
   }
 
   @override
-  set accounts(ObservableList<InvalidType> value) {
+  set accounts(ObservableList<Account> value) {
     _$accountsAtom.reportWrite(value, super.accounts, () {
       super.accounts = value;
     });
@@ -29,7 +29,7 @@ mixin _$AccountsStore on _AccountsStore, Store {
       ActionController(name: '_AccountsStore', context: context);
 
   @override
-  void addAccount(InvalidType account) {
+  void addAccount(Account account) {
     final _$actionInfo = _$_AccountsStoreActionController.startAction(
         name: '_AccountsStore.addAccount');
     try {
@@ -51,7 +51,7 @@ mixin _$AccountsStore on _AccountsStore, Store {
   }
 
   @override
-  void updateAccount(InvalidType updatedAccount) {
+  void updateAccount(Account updatedAccount) {
     final _$actionInfo = _$_AccountsStoreActionController.startAction(
         name: '_AccountsStore.updateAccount');
     try {
@@ -69,5 +69,4 @@ accounts: ${accounts}
   }
 }
 
-class InvalidType {
-}
+

@@ -21,7 +21,8 @@ class AppTheme {
     }
   }
 
-  static TextTheme _buildTextTheme(TextTheme base, Color? color) {
+  static TextTheme _buildTextTheme(TextTheme base, Color? color) {    
+
     return base.copyWith(
       // headline6: GoogleFonts.manrope(
       //     textStyle: TextStyle(
@@ -31,13 +32,13 @@ class AppTheme {
       // subtitle2: GoogleFonts.manrope(
       //     textStyle: TextStyle(
       //         color: color, fontSize: 14, fontWeight: FontWeight.w500)),
-      // bodyMedium:
-      //     GoogleFonts.manrope(textStyle: TextStyle(color: color, fontSize: 14)),
-      // bodySmall:
-      //     GoogleFonts.manrope(textStyle: TextStyle(color: color, fontSize: 16)),
+      bodyMedium:
+          GoogleFonts.manrope(textStyle: TextStyle(color: color, fontSize: 14)),
+      bodySmall:
+          GoogleFonts.manrope(textStyle: TextStyle(color: color, fontSize: 16)),
       // button: GoogleFonts.manrope(
       //     textStyle: TextStyle(
-      //         color: base.button!.color,
+      //         // color: "red",
       //         fontSize: 14,
       //         fontWeight: FontWeight.w500)),
       // caption:
