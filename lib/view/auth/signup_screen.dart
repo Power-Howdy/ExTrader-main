@@ -60,7 +60,7 @@ class _SignupScreenState extends State<SignupScreen> {
         "email": email,
         "password": password
       };
-      await apiService.postData("api/auth/signup", data);
+      await apiService.postData("user/add", data);
       Fluttertoast.showToast(msg: "Please verify your email.");
       Get.offAll(const EmailScreen(), transition: Transition.fadeIn);
 
