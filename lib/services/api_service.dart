@@ -7,7 +7,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'dart:developer' as developer;
 
 class APIService {
-  final String _baseUrl = "http://192.168.136.192:3000"; //"extrader-sys.com";
+  final String _baseUrl = "http://127.0.0.1:3000"; //"extrader-sys.com";
   List<String> mt_versions = ['mt4', 'mt5'];
   final SecureStorage secureStorage = SecureStorage();
 
