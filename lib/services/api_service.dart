@@ -81,22 +81,25 @@ class APIService {
       }
       return json.decode(response.body);
     } else {
-      print(response.statusCode);
-      print(response.body);
+      var errRes = json.decode(response.body);
+      var errMsg = "Whoops! Something went wrong.";
+
+      if(errRes["error"]) {
+        errMsg = errRes["error"];
+      }
       Fluttertoast.showToast(
-          msg: "Whoops! Something went wrong.",
+          msg: errMsg,
           toastLength: Toast.LENGTH_SHORT,
           gravity: ToastGravity.BOTTOM,
           timeInSecForIosWeb: 1,
           backgroundColor: Colors.red,
           textColor: Colors.white,
           fontSize: 16.0);
-      throw Exception('Failed to post data');
+          return;
     }
   }
 
   // Add more methods for PUT, DELETE, etc., as needed
-
   Future<dynamic> connect({
     required String user,
     required String password,
